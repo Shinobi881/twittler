@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <title>TWITLER</title>
     <script src="jquery.js"></script>
+    <script src="twittler.js"></script>
     <script src="data_generator.js"></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
+  
   <body>
+    <h1>TWITTLE DROPPING!!!</h1>
     <script>
 
       $(document).ready(function(){
+
         var $body = $('body');
         $body.html('');
 
         var index = streams.home.length - 1;
         while(index >= 0){
           var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
+          var $header1 = $('<h2 style="color:green">TWITTLE DROPPING!!!</h2>');
+          var $tweetUser = $('<div style="color:black"></div>');
+          var $tweet = $('<div style="color:red", "font-style:italic"></div>');
+          
+          $tweet.text('@' + tweet.user + ': ' + tweet.message + ' - ' + tweet.created_at);
+          
+          $tweetUser.text(tweet.user);
+
+          //$header1.appendTo($body);
+          $tweetUser.appendTo($body)
           $tweet.appendTo($body);
           index -= 1;
         }
+
+
 
       });
 
