@@ -57,7 +57,7 @@ $(document).ready(function(){
         $sharksCheap.click(function(){
           var randomTweet = randomMessage();
           var timeStamp = new Date();
-          var twId = $('<p id="twitHandle"></p>');
+          var twId = $('<h2></h2>');
           var tw = $('<p id="twitText"></p>');
           twId.text('@sharksforcheap--');
           tw.text(randomTweet + ' -- ' + timeStamp);
@@ -69,7 +69,7 @@ $(document).ready(function(){
         $mRacus.click(function(){
           var randomTweet = randomMessage();
           var timeStamp = new Date();
-          var twId = $('<p id="twitHandle"></p>');
+          var twId = $('<h2></h2>');
           var tw = $('<p id="twitText"></p>');
           twId.text('@mracus--');
           tw.text(randomTweet + ' -- ' + timeStamp);
@@ -81,7 +81,7 @@ $(document).ready(function(){
         $dougCal.click(function(){
           var randomTweet = randomMessage();
           var timeStamp = new Date();
-          var twId = $('<p id="twitHandle"></p>');
+          var twId = $('<h2></h2>');
           var tw = $('<p id="twitText"></p>');
           twId.text('@douglascalhoun--');
           tw.text(randomTweet + ' -- ' + timeStamp);

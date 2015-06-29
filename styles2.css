@@ -1,9 +1,11 @@
 body {
-	/*background-color: black;*/
+	
+	background-color: black;
 	vertical-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
+	background-image: url("https://dviw3bl0enbyw.cloudfront.net/uploads/forum_attachment/file/35185/blion.jpg");
 
 }
 
@@ -20,13 +22,18 @@ button {
 	padding-bottom: 5px;	
 	margin-right: 5px;
 	margin-left: 5px;
-	background-color: gray;
+	background-color: #2f2f2f;
 	
 }
 
-p #twitHandle {
+h2 {
 	font-size: 24px;
+	color: green;
+}
 
+p {
+	font-size: 16px;
+	color: red;
 }
 
 
